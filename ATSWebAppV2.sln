@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1705.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATSWebAppV2", "ATSWebAppV2\ATSWebAppV2.csproj", "{378B6134-7EF1-4EB4-9B63-4373E68BDF8E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{378B6134-7EF1-4EB4-9B63-4373E68BDF8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{378B6134-7EF1-4EB4-9B63-4373E68BDF8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{378B6134-7EF1-4EB4-9B63-4373E68BDF8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{378B6134-7EF1-4EB4-9B63-4373E68BDF8E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {41B16091-1534-4E09-92A8-EBB5D918C1B3}
+	EndGlobalSection
+EndGlobal
