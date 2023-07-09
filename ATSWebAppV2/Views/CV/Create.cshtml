@@ -62,14 +62,89 @@
 </div>
 
 <div id="cvStyled">
-    <h1 id="nameDisplay" style=""></h1>
-    <h5 id="emailDisplay" style=""></h5>
-    <h5 id="phoneNumberDisplay" style=""></h5>
-    <h5 id="addressDisplay" style=""></h5>
-    <h3 id="summaryDisplay" style=""></h3>
-    <h3 id="workExperienceDisplay" style=""></h3>
-    <h3 id="educationDisplay" style=""></h3>
-    <h3 id="hobbiesDisplay" style=""></h3>
+    <div id="downloadablePDF">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+
+            #downloadablePDF {
+                margin: 0 auto;
+                width: 600px;
+                padding: 20px;
+                background-color: #f2f2f2;
+                border: 1px solid #ddd;
+            }
+
+            #nameDisplay {
+                font-size: 24px;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            #contactDetails {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            #emailDisplay,
+            #phoneNumberDisplay,
+            #addressDisplay {
+                font-size: 14px;
+                display: inline-block;
+                margin: 0 10px;
+            }
+
+            .section {
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+
+            .section-title {
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+        </style>
+        <h1 id="nameDisplay" style=""></h1>
+        <div id="contactDetails">
+            <h5 id="emailDisplay" style=""></h5>
+            <h5 id="phoneNumberDisplay" style=""></h5>
+            <h5 id="addressDisplay" style=""></h5>
+        </div>
+        <div class="section">
+            <h3 class="section-title">Summary</h3>
+            <p id="summaryDisplay" style=""></p>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">Work Experience</h3>
+            <ul id="workExperienceDisplay" style="">
+                <li>[Work Experience 1]</li>
+                <li>[Work Experience 2]</li>
+                <li>[Work Experience 3]</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">Education</h3>
+            <ul id="educationDisplay" style="">
+                <li>[Education 1]</li>
+                <li>[Education 2]</li>
+                <li>[Education 3]</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">Hobbies</h3>
+            <ul id="hobbiesDisplay" style="">
+                <li>[Hobby 1]</li>
+                <li>[Hobby 2]</li>
+                <li>[Hobby 3]</li>
+            </ul>
+        </div>
+    </div>
     <div>
         <a asp-action="Index">Back to List</a>
         <button id="downloadPdf" onclick="downloadPdf()">Download CV as PDF</button>
@@ -87,7 +162,7 @@
 
         function downloadPdf() {
             console.log("Download CV as PDF clicked!"); // Added print statement
-            var element = document.getElementById('cvStyled');
+            var element = document.getElementById('downloadablePDF');
         html2pdf()
         .from(element)
         .save('cv.pdf');
